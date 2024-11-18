@@ -1,0 +1,124 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primaryColor: #ffbb00;
+  --secondaryColor: #fff6e4;
+  --blackColor: #2c2c2c;
+  --greyColor: #9c9c9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+  color: var(--blackColor);
+  padding: 0 150px;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+nav .logo {
+  color: var(--blackColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li i {
+  font-size: 20px;
+}
+nav ul li a {
+  color: var(--greyColor);
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: var(--blackColor);
+}
+nav .active {
+  color: var(--primaryColor);
+}
+nav .active:hover {
+  color: var(--primaryColor);
+}
+.nav-btn {
+  display: flex;
+}
+.nav-btn button:nth-child(1) {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 14px 20px;
+  height: 45px;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-btn button:nth-child(2) {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  padding: 14px 25px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* iklan */
+.iklan {
+  display: flex;
+  justify-content: center;
+}
+.iklan img {
+  width: 100%;
+  height: 50vh;
+}
+
+/* category */
+.category-btn {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  padding: 15px 40px 15px 15px;
+  margin: 30px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* box list */
+.box-list {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  width: 180px;
+  height: 150px;
+  background-color: #fff;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.box button {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+}
